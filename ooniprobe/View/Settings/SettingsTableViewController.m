@@ -167,8 +167,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:sender.date forKey:@"test_reminder_time"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [timeField setText:[timeFormatter stringFromDate:sender.date]];
-    //[self.tableView reloadData];
-    //[self showNotification:datePicker.date];
+    [self showNotification:datePicker.date];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
@@ -319,6 +318,21 @@
     }
     [self.view endEditing:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)showNotification:(NSDate*)fireDate
+{
+    [self cancelScheduledNotifications];
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = fireDate;
+    localNotification.alertBody = NSLocalizedString(@"Notification.RunTestReminder", nil);
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.repeatInterval = NSCalendarUnitDay;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
+
+-(void)cancelScheduledNotifications{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 
 @end
