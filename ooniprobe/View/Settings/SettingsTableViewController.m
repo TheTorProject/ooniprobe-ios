@@ -1,4 +1,5 @@
 #import "SettingsTableViewController.h"
+#import "NotificationUtility.h"
 
 @interface SettingsTableViewController ()
 @end
@@ -167,7 +168,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:sender.date forKey:@"test_reminder_time"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [timeField setText:[timeFormatter stringFromDate:sender.date]];
-    [self showNotification:datePicker.date];
+    [NotificationUtility scheduleLocalNotification:sender.date withText:NSLocalizedString(@"Notification.RunTestReminder", nil)];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
@@ -210,7 +211,7 @@
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     NSString *current = [items objectAtIndex:indexPath.row];
     //TODO ORCHESTRA handle automated_testing_enabled
-    if ([current isEqualToString:@"notifications_enabled"] && mySwitch.on){
+    if (([current isEqualToString:@"notifications_enabled"] || [current isEqualToString:@"test_reminder"]) && mySwitch.on){
         [self handleNotificationChanges];
         [mySwitch setOn:FALSE];
     }
@@ -288,6 +289,7 @@
     }];
 }
 - (void)registeredForNotifications {
+    //TODO check if update the notifications_enabled key or the test_reminder key
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"notifications_enabled"];
     [self reloadSettings];
 }
@@ -320,19 +322,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (void)showNotification:(NSDate*)fireDate
-{
-    [self cancelScheduledNotifications];
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = fireDate;
-    localNotification.alertBody = NSLocalizedString(@"Notification.RunTestReminder", nil);
-    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    localNotification.repeatInterval = NSCalendarUnitDay;
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-}
 
--(void)cancelScheduledNotifications{
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-}
 
 @end

@@ -1,4 +1,5 @@
 #import "Suite.h"
+#import "NotificationUtility.h"
 
 @implementation AbstractSuite
 
@@ -47,7 +48,9 @@
         UIApplicationState state = [[UIApplication sharedApplication] applicationState];
         if (state == UIApplicationStateBackground || state == UIApplicationStateInactive){
             if ([SettingsUtility getSettingWithName:@"notifications_enabled"] && [SettingsUtility getSettingWithName:@"notifications_completion"])
-                [self showNotification];
+                [NotificationUtility showLocalNotification:[NSDate date]
+                                                  withText:[NSString stringWithFormat:@"%@ %@",
+                                                            [LocalizationUtility getNameForTest:self.result.test_group_name], NSLocalizedString(@"Notification.FinishedRunning", nil)]];
         }
         //Resetting class values
         self.result = nil;
@@ -56,15 +59,6 @@
     }
     [[UIApplication sharedApplication] endBackgroundTask:self.backgroundTask];
     self.backgroundTask = UIBackgroundTaskInvalid;
-}
-
-- (void)showNotification {
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate date];
-    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    localNotification.alertBody = [NSString stringWithFormat:@"%@ %@", [LocalizationUtility getNameForTest:self.result.test_group_name], NSLocalizedString(@"Notification.FinishedRunning", nil)];
-    [localNotification setApplicationIconBadgeNumber:[[UIApplication sharedApplication] applicationIconBadgeNumber] + 1];
-    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
 
 -(NSArray*)getTestList {

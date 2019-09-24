@@ -26,6 +26,7 @@
 		ED1EC171204E9B61000DEB9F /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC170204E9B61000DEB9F /* LogViewController.m */; };
 		ED1F33621EFD552F00B42FEC /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F33611EFD552F00B42FEC /* BrowserViewController.m */; };
 		ED20966A209791C40028BEA3 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED209669209791C40028BEA3 /* PaddingLabel.m */; };
+		ED2D9D252339F70100416892 /* NotificationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2D9D242339F70100416892 /* NotificationUtility.m */; };
 		ED2E066C21D4867B00E9B9EE /* HttpHeaderFieldManipulation.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED2E065921D4867B00E9B9EE /* HttpHeaderFieldManipulation.mm */; };
 		ED2E066D21D4867B00E9B9EE /* WebConnectivity.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED2E065A21D4867B00E9B9EE /* WebConnectivity.mm */; };
 		ED2E066E21D4867B00E9B9EE /* AbstractTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED2E065B21D4867B00E9B9EE /* AbstractTest.mm */; };
@@ -180,6 +181,8 @@
 		ED1F33611EFD552F00B42FEC /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		ED209668209791C40028BEA3 /* PaddingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddingLabel.h; sourceTree = "<group>"; };
 		ED209669209791C40028BEA3 /* PaddingLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddingLabel.m; sourceTree = "<group>"; };
+		ED2D9D232339F70100416892 /* NotificationUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NotificationUtility.h; path = Utility/NotificationUtility.h; sourceTree = "<group>"; };
+		ED2D9D242339F70100416892 /* NotificationUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NotificationUtility.m; path = Utility/NotificationUtility.m; sourceTree = "<group>"; };
 		ED2E065621D4867B00E9B9EE /* HttpInvalidRequestLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInvalidRequestLine.h; sourceTree = "<group>"; };
 		ED2E065721D4867B00E9B9EE /* AbstractTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTest.h; sourceTree = "<group>"; };
 		ED2E065821D4867B00E9B9EE /* WebConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebConnectivity.h; sourceTree = "<group>"; };
@@ -634,6 +637,8 @@
 				EDA7645E2153090800C24688 /* NSDictionary+Safety.m */,
 				EDA9F21922414E0E003D40E8 /* UIDevice-DeviceInfo.h */,
 				EDA9F21A22414E0E003D40E8 /* UIDevice-DeviceInfo.m */,
+				ED2D9D232339F70100416892 /* NotificationUtility.h */,
+				ED2D9D242339F70100416892 /* NotificationUtility.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -1221,6 +1226,7 @@
 				ED55C0C9203BD52900738260 /* Header1MBViewController.m in Sources */,
 				ED90A9282198DE5100204B46 /* Network.m in Sources */,
 				ED41D8B82089E9C500543191 /* WebsitesDetailsViewController.m in Sources */,
+				ED2D9D252339F70100416892 /* NotificationUtility.m in Sources */,
 				ED3AE9F020341C8600DAAF36 /* ResultsHeaderViewController.m in Sources */,
 				EDDB0B761FFF6C8B00EFD9C8 /* Onboarding3ViewController.m in Sources */,
 				EDB33B7E21838824002CEC34 /* CustomURLViewController.m in Sources */,
