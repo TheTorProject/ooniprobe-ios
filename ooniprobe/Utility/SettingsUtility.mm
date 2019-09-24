@@ -4,8 +4,7 @@
 @implementation SettingsUtility
 
 + (NSArray*)getSettingsCategories{
-    //TODO ORCHESTRA reenable @"automated_testing"
-    return @[@"notifications", @"sharing", @"advanced", @"send_email", @"about_ooni"];
+    return @[@"notifications", @"automated_testing", @"sharing", @"advanced", @"send_email", @"about_ooni"];
 }
 
 + (NSArray*)getSettingsForCategory:(NSString*)categoryName{
@@ -15,6 +14,12 @@
             return @[@"notifications_enabled", @"notifications_completion"];
         else
             return @[@"notifications_enabled"];
+    }
+    else if ([categoryName isEqualToString:@"automated_testing"]) {
+        if ([self getSettingWithName:@"test_reminder"])
+            return @[@"test_reminder", @"test_reminder_time"];
+        else
+            return @[@"test_reminder"];
     }
     else if ([categoryName isEqualToString:@"sharing"]) {
         //TODO GPS @"include_gps"
@@ -33,6 +38,8 @@
         return @"segue";
     else if ([setting isEqualToString:@"monthly_mobile_allowance"] || [setting isEqualToString:@"monthly_wifi_allowance"] || [setting isEqualToString:@"max_runtime"])
         return @"int";
+    if ([setting isEqualToString:@"test_reminder_time"])
+        return @"date";
     return @"bool";
 }
 

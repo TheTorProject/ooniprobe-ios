@@ -35,6 +35,10 @@
 	<false/>
 	<key>automated_testing_enabled</key>
 	<false/>
+	<key>test_reminder</key>
+	<false/>
+	<key>test_reminder_time</key>
+	<date>2000-01-01T17:00:00Z</date>
 	<key>monthly_mobile_allowance</key>
 	<integer>100</integer>
 	<key>monthly_wifi_allowance</key>

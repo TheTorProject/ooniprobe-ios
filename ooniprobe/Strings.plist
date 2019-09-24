@@ -46,6 +46,10 @@
 	<string>Settings.AutomatedTesting.Enabled</string>
 	<key>enabled_tests</key>
 	<string>Settings.AutomatedTesting.EnabledTests</string>
+	<key>test_reminder</key>
+	<string>Settings.AutomatedTesting.Reminder</string>
+	<key>test_reminder_time</key>
+	<string>Settings.AutomatedTesting.Reminder.Time</string>
 	<key>website_categories</key>
 	<string>Settings.Websites.Categories.Label</string>
 	<key>monthly_mobile_allowance</key>

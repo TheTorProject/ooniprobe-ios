@@ -18,7 +18,8 @@
     else if (testSuite != nil)
         self.title = [LocalizationUtility getNameForTest:testSuite.name];
     self.navigationController.navigationBar.topItem.title = @"";
-
+    timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"HH:mm"];
     keyboardToolbar = [[UIToolbar alloc] init];
     [keyboardToolbar sizeToFit];
     UIBarButtonItem *flexBarButton = [[UIBarButtonItem alloc]
@@ -107,14 +108,22 @@
         cell.textLabel.textColor = [UIColor colorWithRGBHexString:color_gray9 alpha:1.0f];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    else if ([[SettingsUtility getTypeForSetting:current] isEqualToString:@"int"]){
+    else if ([[SettingsUtility getTypeForSetting:current] isEqualToString:@"int"] || [[SettingsUtility getTypeForSetting:current] isEqualToString:@"date"]){
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
         cell.textLabel.text = [LocalizationUtility getNameForSetting:current];
         cell.textLabel.textColor = [UIColor colorWithRGBHexString:color_gray9 alpha:1.0f];
-        NSNumber *value = [[NSUserDefaults standardUserDefaults] objectForKey:current];
-        NSDecimalNumber *someNumber = [NSDecimalNumber decimalNumberWithString:[value stringValue]];
-        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-        UITextField *textField = [self createTextField:@"int" :[formatter stringFromNumber:someNumber]];
+        UITextField *textField = [self createTextField:[SettingsUtility getTypeForSetting:current]];
+        if ([[SettingsUtility getTypeForSetting:current] isEqualToString:@"int"]){
+            NSNumber *value = [[NSUserDefaults standardUserDefaults] objectForKey:current];
+            NSDecimalNumber *someNumber = [NSDecimalNumber decimalNumberWithString:[value stringValue]];
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            textField.text = [formatter stringFromNumber:someNumber];
+        }
+        else if ([[SettingsUtility getTypeForSetting:current] isEqualToString:@"date"]){
+            NSDate *time = [[NSUserDefaults standardUserDefaults] objectForKey:current];
+            textField.text = [timeFormatter stringFromDate:time];
+            timeField = textField;
+        }
         cell.accessoryView = textField;
     }
     else if ([[SettingsUtility getTypeForSetting:current] isEqualToString:@"string"]){
@@ -122,13 +131,14 @@
         cell.textLabel.text = [LocalizationUtility getNameForSetting:current];
         cell.textLabel.textColor = [UIColor colorWithRGBHexString:color_gray9 alpha:1.0f];
         NSString *value = [[NSUserDefaults standardUserDefaults] objectForKey:current];
-        UITextField *textField = [self createTextField:@"string" :value];
+        UITextField *textField = [self createTextField:@"string"];
+        textField.text = value;
         cell.accessoryView = textField;
     }
     return cell;
 }
 
-- (UITextField*)createTextField:(NSString*)type :(NSString*)text{
+- (UITextField*)createTextField:(NSString*)type{
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
     textField.delegate = self;
     textField.backgroundColor = [UIColor colorWithRGBHexString:color_white alpha:1.0f];
@@ -136,13 +146,29 @@
     textField.textColor = [UIColor colorWithRGBHexString:color_gray9 alpha:1.0f];
     textField.autocorrectionType = UITextAutocorrectionTypeNo;
     textField.borderStyle = UITextBorderStyleRoundedRect;
-    textField.text = text;
     if ([type isEqualToString:@"int"])
         textField.keyboardType = UIKeyboardTypeNumberPad;
+    else if ([type isEqualToString:@"date"]){
+        UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+        [datePicker setDatePickerMode:UIDatePickerModeTime];
+        [datePicker setLocale:[NSLocale currentLocale]];
+        NSDate *time = [[NSUserDefaults standardUserDefaults] objectForKey:@"test_reminder_time"];
+        [datePicker setDate:time];
+        [datePicker addTarget:self action:@selector(timeChanged:) forControlEvents:UIControlEventValueChanged];
+        textField.inputView = datePicker;
+    }
     else
         textField.keyboardType = UIKeyboardTypeDefault;
     textField.inputAccessoryView = keyboardToolbar;
     return textField;
+}
+
+-(void)timeChanged:(UIDatePicker*)sender{
+    [[NSUserDefaults standardUserDefaults] setObject:sender.date forKey:@"test_reminder_time"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [timeField setText:[timeFormatter stringFromDate:sender.date]];
+    //[self.tableView reloadData];
+    //[self showNotification:datePicker.date];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
@@ -189,6 +215,7 @@
         [self handleNotificationChanges];
         [mySwitch setOn:FALSE];
     }
+    //TODO if test reminder ask notification
     else if ([current isEqualToString:@"include_cc"] && !mySwitch.on){
         UIAlertAction* okButton = [UIAlertAction
                                    actionWithTitle:NSLocalizedString(@"Modal.OK", nil)

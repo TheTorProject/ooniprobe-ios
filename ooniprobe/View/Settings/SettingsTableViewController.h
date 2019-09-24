@@ -9,7 +9,8 @@
 @interface SettingsTableViewController : UITableViewController <UITextFieldDelegate, UIAlertViewDelegate> {
     NSArray *items;
     UIToolbar *keyboardToolbar;
-
+    NSDateFormatter *timeFormatter;
+    UITextField *timeField;
 }
 
 @property (nonatomic, strong) NSString *category;
