@@ -49,7 +49,7 @@
 "Dashboard.Middleboxes.Card.Description" = "Détecter les boîtiers intermédiaires dans votre réseau";
 "Dashboard.Middleboxes.Overview.Paragraph" = "Les fournisseurs d’accès à Internet utilisent souvent des appareils réseau (des boîtiers intermédiaires) pour diverses tâches propres au réseau (telles que la mise en cache). Ces boîtiers intermédiaires sont parfois utilisés pour censurer ou surveiller Internet.\n\nTrouvez des boîtiers intermédiaires dans votre réseau grâce aux tests de l’OONI [HTTP Ligne de requête invalide](https://ooni.io/nettest/http-invalid-request-line/) et [HTTP Manipulation du champ d’en-tête](https://ooni.io/nettest/http-header-field-manipulation/).\n\nVos résultats seront publiés dans l’[explorateur de l’OONI](https://explorer.ooni.io/world/) et l’[API de l’OONI](https://api.ooni.io/).";
 "Dashboard.InstantMessaging.Card.Description" = "Testez le blocage des applis de messagerie instantanée";
-"Dashboard.InstantMessaging.Overview.Paragraph" = "Vérifiez si [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) et [Telegram](https://ooni.ionettest/telegram/) sont bloqués.\n\nVos résultats seront publiés dans l’[explorateur de l’OONI](https://explorer.ooni.io/world/) et l’[API de l’OONI](https://api.ooni.io/).";
+"Dashboard.InstantMessaging.Overview.Paragraph" = "Vérifiez si [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) et [Telegram](https://ooni.io/nettest/telegram/) sont bloqués.\n\nVos résultats seront publiés dans l’[explorateur de l’OONI](https://explorer.ooni.io/world/) et l’[API de l’OONI](https://api.ooni.io/).";
 "TestResults.Gbps" = "Gbps";
 "TestResults.Mbps" = "Mbps";
 "TestResults.Kbps" = "Kbps";

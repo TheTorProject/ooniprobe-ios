@@ -49,7 +49,7 @@
 "Dashboard.Middleboxes.Card.Description" = "Εντόπισε middleboxes στο δίκτυό σου";
 "Dashboard.Middleboxes.Overview.Paragraph" = "Οι πάροχοι υπηρεσιών Διαδικτύου χρησιμοποιούν συχνά συσκευές (middleboxes) για διάφορους σκοπούς δικτύωσης (όπως caching). Μερικές φορές αυτές οι συσκευές χρησιμοποιούνται για την εφαρμογή λογοκρισίας ή επιτήρησης στο Διαδίκτυο.\n\nΔες αν χρησιμοποιούνται τέτοιες συσκευές (middleboxes) στο δίκτυό σου, εκτελώντας τις δοκιμές [HTTP Invalid Request Line](https://ooni.io/nettest/http-invalid-request-line/) και [HTTP Header Field Manipulation](https://ooni.io/nettest/http-header-field-manipulation/) του OONI.\n\nΤα αποτελέσματα των δοκιμών σου θα δημοσιευτούν στο [OONI Explorer](https://explorer.ooni.io/world/) και στο [OONI API](https://api.ooni.io/).";
 "Dashboard.InstantMessaging.Card.Description" = "Τέσταρε το μπλοκάρισμα εφαρμογών συνομιλιών";
-"Dashboard.InstantMessaging.Overview.Paragraph" = "Δες αν το [WhatsApp](https://ooni.io/nettest/whatsapp/), το [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) και το [Telegram](https://ooni.ionettest/telegram/) έχουν μπλοκαριστεί.\n\nΤα αποτελέσματα των δοκιμών σου θα δημοσιευτούν στο [OONI Explorer](https://explorer.ooni.io/world/) και στο [OONI API](https://api.ooni.io/).";
+"Dashboard.InstantMessaging.Overview.Paragraph" = "Δες αν το [WhatsApp](https://ooni.io/nettest/whatsapp/), το [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) και το [Telegram](https://ooni.io/nettest/telegram/) έχουν μπλοκαριστεί.\n\nΤα αποτελέσματα των δοκιμών σου θα δημοσιευτούν στο [OONI Explorer](https://explorer.ooni.io/world/) και στο [OONI API](https://api.ooni.io/).";
 "TestResults.Gbps" = "Gbps";
 "TestResults.Mbps" = "Mbps";
 "TestResults.Kbps" = "Kbps";

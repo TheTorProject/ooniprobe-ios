@@ -49,7 +49,7 @@
 "Dashboard.Middleboxes.Card.Description" = "अपने नेटवर्क में मिडलबॉक्स खोजें";
 "Dashboard.Middleboxes.Overview.Paragraph" = "इंटरनेट सेवा प्रदाता अक्सर विभिन्न नेटवर्किंग उद्देश्यों (जैसे कैशिंग) के लिए नेटवर्क उपकरणों (middleboxes) का उपयोग करते हैं। कभी-कभी इन middleboxes को इंटरनेट सेंसरशिप और / या निगरानी को लागू करने के लिए उपयोग किया जाता है।\n\nOONI की [HTTP अमान्य अनुरोध पंक्ति](https://ooni.io/nettest/http-invalid-request-line/) और [HTTP शीर्ष लेख फ़ील्ड हेरफेर](https://ooni.io/nettest/http-header-field-manipulation/) का उपयोग करके अपने नेटवर्क में मिडिलबॉक्स खोजें परीक्षण।\n\nआपके परिणाम [OONI एक्सप्लोरर](https://explorer.ooni.io/world/) और [OONI API](https://api.ooni.io/) पर प्रकाशित किए जाएंगे।";
 "Dashboard.InstantMessaging.Card.Description" = "त्वरित संदेश एप्लिकेशन को अवरुद्ध करने का परीक्षण करें";
-"Dashboard.InstantMessaging.Overview.Paragraph" = "जाँच करें कि क्या [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) और [Telegram](https://ooni.ionettest/telegram/) अवरुद्ध हैं।\n\nआपके परिणाम [OONI एक्सप्लोरर](https://explorer.ooni.io/world/) और [OONI API](https://api.ooni.io/) पर प्रकाशित किए जाएंगे।";
+"Dashboard.InstantMessaging.Overview.Paragraph" = "जाँच करें कि क्या [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) और [Telegram](https://ooni.io/nettest/telegram/) अवरुद्ध हैं।\n\nआपके परिणाम [OONI एक्सप्लोरर](https://explorer.ooni.io/world/) और [OONI API](https://api.ooni.io/) पर प्रकाशित किए जाएंगे।";
 "TestResults.Gbps" = "Gbps";
 "TestResults.Mbps" = "एमबीपीएस";
 "TestResults.Kbps" = "Kbps";

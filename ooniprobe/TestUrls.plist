@@ -15,7 +15,7 @@
 	<key>whatsapp</key>
 	<string>https://ooni.io/nettest/whatsapp</string>
 	<key>telegram</key>
-	<string>https://ooni.ionettest/telegram</string>
+	<string>https://ooni.io/nettest/telegram</string>
 	<key>facebook_messenger</key>
 	<string>https://ooni.io/nettest/facebook-messenger</string>
 </dict>
