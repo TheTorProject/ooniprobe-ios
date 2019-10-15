@@ -49,7 +49,7 @@
 "Dashboard.Middleboxes.Card.Description" = "Zbuloni middleboxes në rrjetin tuaj";
 "Dashboard.Middleboxes.Overview.Paragraph" = "Ofruesit e Shërbimit të Internetit shpeshë përdorin aplikime rrjeti (middleboxes) për qëllime të ndryshme rrjeti (siç janë fshehjet). Shpeshë herë këto middleboxes përdoren të implementuar censurim në internet dhe/ose përgjime.\n\nZbuloni middleboxes në rrjetin tuaj duke përdorur [HTTP Invalid Request Line](https://ooni.io/nettest/http-invalid-request-line/) nga OONI dhe [HTTP Header Field Manipulation](https://ooni.io/nettest/http-header-field-manipulation/) tests.\n\nRezultatet tuaja do të publikohen në [OONI Explorer](https://explorer.ooni.io/world/) dhe [OONI API](https://api.ooni.io/).\n";
 "Dashboard.InstantMessaging.Card.Description" = "Testoni bllokimin e aplikacioneve të mesazheve";
-"Dashboard.InstantMessaging.Overview.Paragraph" = "Check whether [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) and [Telegram](https://ooni.io/nettest/telegram/) are blocked.\n\nYour results will be published on [OONI Explorer](https://explorer.ooni.io/world/) and [OONI API](https://api.ooni.io/).";
+"Dashboard.InstantMessaging.Overview.Paragraph" = "Kontrollo nëse [WhatsApp](https://ooni.io/nettest/whatsapp/), [Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) dhe [Telegram](https://ooni.io/nettest/telegram/) janë bllokuar.";
 "TestResults.Gbps" = "Gbps";
 "TestResults.Mbps" = "Mbps";
 "TestResults.Kbps" = "Kbps";
@@ -252,6 +252,17 @@
 "Settings.Notifications.Enabled" = "Mundësuar";
 "Settings.Notifications.OnTestCompletion" = "Nofto pasi të kryet testimi";
 "Settings.Notifications.OnNews" = "Kryefaqja";
+"Settings.AutomatedTesting.Label" = "Automated testing";
+"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
+"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
+"Settings.AutomatedTesting.EnabledTests" = "Testime të aktivizuara";
+"Settings.AutomatedTesting.Reminder.Time" = "Koha";
+"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
+"Settings.AutomatedTesting.Categories.Label" = "Kategoritë";
+"Settings.AutomatedTesting.Categories.Title" = "Kategori faqjesh për të testuar";
+"Settings.AutomatedTesting.Categories.Subtitle" = "%@ shtete të aktivizuara";
+"Settings.AutomatedTesting.MonthlyMobileAllowance" = "Lejim mujor në celular";
+"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "Lejim mujor WiFi";
 "Settings.Sharing.Label" = "Ndajë";
 "Settings.Sharing.UploadResults" = "Publiko rezultatet automatikisht";
 "Settings.Sharing.UploadResultsManually" = "Ngarkim Muanual i Rezultateve";
@@ -290,6 +301,8 @@
 "Settings.SendEmail.Label" = "Dërgo email tek ndihmuesi";
 "Settings.SendEmail.Error" = "Ju lutem dërgoni email tek bugs@openobservatory.org me informacionin e app dhe versionin e iOS. Zgjidh \"Kopjo në tabelën-mbledhëse\" më poshtë për të kopjuar adresën tonë të email.";
 "Notification.FinishedRunning" = "Mbaroi së ekzekutuari";
+"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
+"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "Përvo mirror";
 "OONIBrowser.Loading" = "Duke u ngarkuar";
 "OONIBrowser.Error" = "Ndodhi një gabim i papritur. Ju lutem ringarkoni këtë faqe.";
