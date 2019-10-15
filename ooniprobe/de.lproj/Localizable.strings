@@ -198,7 +198,7 @@
 "Modal.Error.NotificationNotEnabled" = "Benachrichtigungsberechtigungen sind erforderlich. Bitte aktiviere sie in den Einstellungen deines Telefons und anschließend in deiner OONI Probe App.";
 "Modal.Error.NotificationNotEnabled.GoToSettings" = "Gehe zu Einstellungen";
 "Modal.Error.CantCloseScreen" = "Dieser Bildschirm ist gesperrt, während ein Test ausgeführt wird.";
-"Modal.Error.RawDataNoInternet" = "You need to be connected to the internet to download the raw measurement data.";
+"Modal.Error.RawDataNoInternet" = "Um die rohen Messdaten herunterladen zu können, müssen Sie mit dem Internet verbunden sein.";
 "Modal.ResultsNotUploaded.Title" = "Ergebnisse nicht hochgeladen";
 "Modal.ResultsNotUploaded.Paragraph" = "Manche deiner Testergebnisse wurden nicht auf OONI-Server hochgeladen. Wenn du zu OONIs Datensatz beitragen möchtest, lade sie bitte hoch.";
 "Modal.ResultsNotUploaded.Button.Upload" = "Hochladen";
@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "Aktiviert";
 "Settings.Notifications.OnTestCompletion" = "Benachrichtigung nach Abschluss des Tests";
 "Settings.Notifications.OnNews" = "Neuigkeiten";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "Aktivierte Tests";
-"Settings.AutomatedTesting.Reminder.Time" = "Zeit";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "Kategorien";
-"Settings.AutomatedTesting.Categories.Title" = "Zu testende Webseiten-Kategorien";
-"Settings.AutomatedTesting.Categories.Subtitle" = "%@ aktivierte Kategorien";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "Monatliches mobiles Datenvolumen";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "Monatliches WLAN Datenvolumen";
 "Settings.Sharing.Label" = "Beteiligung";
 "Settings.Sharing.UploadResults" = "Ergebnisse automatisch veröffentlichen";
 "Settings.Sharing.UploadResultsManually" = "Manueller Ergebnis-Upload";
@@ -301,8 +290,6 @@
 "Settings.SendEmail.Label" = "E-Mail an den Support senden";
 "Settings.SendEmail.Error" = "Bitte senden Sie eine E-Mail an bugs@openobservatory.org mit Informationen zur App und iOS-Version. Tippen Sie unten auf \"In die Zwischenablage kopieren\", um unsere E-Mail Adresse zu kopieren.";
 "Notification.FinishedRunning" = "Vollständig ausgeführt";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "Versuche Mirror";
 "OONIBrowser.Loading" = "Lade...";
 "OONIBrowser.Error" = "Ein unerwarteter Fehler ist aufgetreten. Bitte lade diese Seite erneut.";

@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "Etkin";
 "Settings.Notifications.OnTestCompletion" = "Sınamanın tamamlandığı bildirilsin";
 "Settings.Notifications.OnNews" = "Haber Akışı";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "Etkinleştirilmiş sınamalar";
-"Settings.AutomatedTesting.Reminder.Time" = "Zaman";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "Kategoriler";
-"Settings.AutomatedTesting.Categories.Title" = "Sınanacak web sitesi kategorileri";
-"Settings.AutomatedTesting.Categories.Subtitle" = "%@ kategori etkin";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "Aylık mobil veri izni";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "Aylık WiFi veri izni";
 "Settings.Sharing.Label" = "Paylaşım";
 "Settings.Sharing.UploadResults" = "Sonuçlar Otomatik Olarak Yayınlansın";
 "Settings.Sharing.UploadResultsManually" = "Sonuçları El ile Yükle ";
@@ -301,8 +290,6 @@
 "Settings.SendEmail.Label" = "Destek ekibine e-posta gönderin";
 "Settings.SendEmail.Error" = "Lütfen uygulama hakkındaki bilgiler ve iOS sürümünü yazarak bugs@openobservatory.org adresine bir e-posta gönderin. E-posta adresimizi kopyalamak için aşağıdaki \"Panoya kopyala\" üzerine dokunun.";
 "Notification.FinishedRunning" = "Çalışmayı tamamladı";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "OONI Probe sınamaları çalıştırılıyor (otomatik sınama etkin)";
 "OONIBrowser.TryMirror" = "Kopyası denensin";
 "OONIBrowser.Loading" = "Yükleniyor...";
 "OONIBrowser.Error" = "Bilinmeyen bir sorun çıktı. Lütfen bu sayfayı yeniden yükleyin.";

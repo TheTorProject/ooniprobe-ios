@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "Enabled";
 "Settings.Notifications.OnTestCompletion" = "Notify upon test completion";
 "Settings.Notifications.OnNews" = "News Feed";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "Enabled tests";
-"Settings.AutomatedTesting.Reminder.Time" = "Time";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "Categories";
-"Settings.AutomatedTesting.Categories.Title" = "Website categories to test";
-"Settings.AutomatedTesting.Categories.Subtitle" = "%@ categories enabled";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "Monthly mobile allowance";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "Monthly WiFi allowance";
 "Settings.Sharing.Label" = "Sharing";
 "Settings.Sharing.UploadResults" = "Automatically Publish Results";
 "Settings.Sharing.UploadResultsManually" = "Manual Result Upload";
@@ -301,8 +290,6 @@
 "Settings.SendEmail.Label" = "Send email to support";
 "Settings.SendEmail.Error" = "Please send an email to bugs@openobservatory.org with information on the app and iOS version. Tap \"Copy to clipboard\" below to copy our email address.";
 "Notification.FinishedRunning" = "Finished running";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "Try mirror";
 "OONIBrowser.Loading" = "Loading...";
 "OONIBrowser.Error" = "An unexpected error occurred. Please reload this page.";

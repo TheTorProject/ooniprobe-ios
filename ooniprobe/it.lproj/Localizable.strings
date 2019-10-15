@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "Attivato";
 "Settings.Notifications.OnTestCompletion" = "Notifica sul completamento di un test";
 "Settings.Notifications.OnNews" = "Feed di notizie";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "Test abilitati";
-"Settings.AutomatedTesting.Reminder.Time" = "Ora";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "Categorie";
-"Settings.AutomatedTesting.Categories.Title" = "Categorie di siti web da misurare";
-"Settings.AutomatedTesting.Categories.Subtitle" = "%@ categorie abilitate";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "Massimale traffico dati mobile mensile";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "Massimale traffico dati WiFi mensile";
 "Settings.Sharing.Label" = "Condivisione";
 "Settings.Sharing.UploadResults" = "Risultati Pubblicati Automaticamente";
 "Settings.Sharing.UploadResultsManually" = "Caricamento Manuale dei Risultati";
@@ -301,8 +290,6 @@
 "Settings.SendEmail.Label" = "Invia email a supporto";
 "Settings.SendEmail.Error" = "Per favore manda un email a bugs@openobservatory.org con i la versione dell'app e iOS. Tappa su \"Copia nella clipboard\" per copiare il nostro indirizzo email.";
 "Notification.FinishedRunning" = "Esecuzione conclusa";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "Prova un mirror";
 "OONIBrowser.Loading" = "Caricamento...";
 "OONIBrowser.Error" = "Si è verificato un errore. Prova a ricaricare la pagina.";

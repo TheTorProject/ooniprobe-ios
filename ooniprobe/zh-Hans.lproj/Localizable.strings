@@ -49,7 +49,7 @@
 "Dashboard.Middleboxes.Card.Description" = "探测您网络中的 middleboxes";
 "Dashboard.Middleboxes.Overview.Paragraph" = "互联网服务提供商（ISP）通常使用中间式的网络设备为各类网络连接与目的提供功能（例如缓存）。有时候，这些中间设备用于实施互联网审查和/或监视。\n\n使用 OONI 的 [HTTP 无效请求行](https://ooni.io/nettest/http-invalid-request-line/)和 [HTTP 标头操作](https://ooni.io/nettest/http-header-field-manipulation/)测试查找您的网络中的中间设备。\n\n您的测试结果将发布在 [OONI Explorer](https://explorer.ooni.io/world/) 和 [OONI API](https://api.ooni.io/)。";
 "Dashboard.InstantMessaging.Card.Description" = "测试封锁即时消息应用的情况";
-"Dashboard.InstantMessaging.Overview.Paragraph" = "检查 [WhatsApp](https://ooni.io/nettest/whatsapp/)、[Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) 和 [Telegram](https://ooni.io/nettest/telegram/) 是否被屏蔽。\n\n您的结果将在 [OONI Explorer](https://explorer.ooni.io/world/) 和 [OONI API](https://api.ooni.io/) 上公布。";
+"Dashboard.InstantMessaging.Overview.Paragraph" = "检查 [WhatsApp](https://ooni.io/nettest/whatsapp/)、[Facebook Messenger](https://ooni.io/nettest/facebook-messenger/) 和 [Telegram](https://ooni.io/nettest/telegram/) 是否被屏蔽。\n\n您的结果将会发布在 [OONI Explorer](https://explorer.ooni.io/world/) 和 [OONI API](https://api.ooni.io/) 上。";
 "TestResults.Gbps" = "Gbps";
 "TestResults.Mbps" = "Mbps";
 "TestResults.Kbps" = "Kbps";
@@ -116,7 +116,7 @@
 "TestResults.Details.Methodology" = "推理能力";
 "TestResults.Details.ViewLog" = "查看日志";
 "TestResults.Details.RawData" = "数据";
-"TestResults.Details.CopyExplorerURL" = "Copy Explorer URL";
+"TestResults.Details.CopyExplorerURL" = "复制 Explorer URL";
 "TestResults.Details.CopyToClipboard" = "复制到剪贴板";
 "TestResults.Details.Failed.Title" = "失败";
 "TestResults.Details.Failed.Paragraph" = "您可以尝试再次运行这个测试";
@@ -198,7 +198,7 @@
 "Modal.Error.NotificationNotEnabled" = "需要通知权限。请在手机设置中启用，然后在 OONI Probe 应用中启用。";
 "Modal.Error.NotificationNotEnabled.GoToSettings" = "转到设置页面";
 "Modal.Error.CantCloseScreen" = "有测试运行时，此屏幕将被锁定。";
-"Modal.Error.RawDataNoInternet" = "You need to be connected to the internet to download the raw measurement data.";
+"Modal.Error.RawDataNoInternet" = "您需要连接到互联网来下载原始测量数据。";
 "Modal.ResultsNotUploaded.Title" = "结果未上传";
 "Modal.ResultsNotUploaded.Paragraph" = "您的部分测试结果尚未上传到 OONI 服务器。如果您想为 OONI 数据集做出贡献，请上传它们。";
 "Modal.ResultsNotUploaded.Button.Upload" = "上传";
@@ -225,7 +225,7 @@
 "Modal.Error.NoValidUrls" = "未找到有效 URL";
 "Modal.Error.JsonEmpty" = "空的 JSON";
 "Toast.CopiedToClipboard" = "已复制到剪贴板";
-"Toast.WillBeAvailable" = "Will be available within 24h";
+"Toast.WillBeAvailable" = "将于 24 小时内可用";
 "Snackbar.ResultsNotUploaded.Text" = "未上传";
 "Snackbar.ResultsNotUploaded.Upload" = "上传";
 "Snackbar.ResultsSomeNotUploaded.Text" = "部分未上传";
@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "启用";
 "Settings.Notifications.OnTestCompletion" = "测试完成后通知";
 "Settings.Notifications.OnNews" = "新闻订阅";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "启用的测试";
-"Settings.AutomatedTesting.Reminder.Time" = "时间";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "分类";
-"Settings.AutomatedTesting.Categories.Title" = "要测试的网站类别";
-"Settings.AutomatedTesting.Categories.Subtitle" = "已启用 %@ 个分类";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "每月移动流量";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "每月 WiFi 流量";
 "Settings.Sharing.Label" = "分享";
 "Settings.Sharing.UploadResults" = "自动发布结果";
 "Settings.Sharing.UploadResultsManually" = "手动上传结果";
@@ -301,8 +290,6 @@
 "Settings.SendEmail.Label" = "发送邮件给支持团队";
 "Settings.SendEmail.Error" = "请将应用信息和iOS版本号通过邮件发送至bugs@openobservatory.org。轻触下方的“复制到剪贴板”来复制我们的邮箱地址。";
 "Notification.FinishedRunning" = "运行完成";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "试试镜像站";
 "OONIBrowser.Loading" = "载入中....";
 "OONIBrowser.Error" = "发生意外错误。请刷新此页面。";

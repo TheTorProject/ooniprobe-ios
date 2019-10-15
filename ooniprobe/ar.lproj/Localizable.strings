@@ -116,7 +116,7 @@
 "TestResults.Details.Methodology" = "المنهجية";
 "TestResults.Details.ViewLog" = "عرض السجل";
 "TestResults.Details.RawData" = "بيانات";
-"TestResults.Details.CopyExplorerURL" = "Copy Explorer URL";
+"TestResults.Details.CopyExplorerURL" = "نسخ رابط المتصفح";
 "TestResults.Details.CopyToClipboard" = "نسخ إلى الحافظة";
 "TestResults.Details.Failed.Title" = "فشل";
 "TestResults.Details.Failed.Paragraph" = "باستطاعتك إجراء هذا الاختبار من جديد ";
@@ -198,7 +198,7 @@
 "Modal.Error.NotificationNotEnabled" = "التطبيق بحاجة الى تصريح التنبيهات. من فضلك قم بإعطاء التطبيق تصريح التنبيهات من خلال إعدادات هاتفك ثم اسمح بها في تطبيق OONI Probe.";
 "Modal.Error.NotificationNotEnabled.GoToSettings" = "اذهب إلى الإعدادات";
 "Modal.Error.CantCloseScreen" = "هذه الواجهة مغلقة لحين الإنتهاء من الاختبار.";
-"Modal.Error.RawDataNoInternet" = "You need to be connected to the internet to download the raw measurement data.";
+"Modal.Error.RawDataNoInternet" = "لا بد أن تكون متصلا بالانترنت لتحميل بيانات القياسات الأولية.";
 "Modal.ResultsNotUploaded.Title" = "النتائج لم يتمّ رفعها";
 "Modal.ResultsNotUploaded.Paragraph" = "بعض نتائج الاختبارات الخاصة بك لم يتمّ رفعها إلى خوادم OONI. من فضلك قم برفعها اذا كنت ترغب بالمساهمة في تجميع بيانات OONI.";
 "Modal.ResultsNotUploaded.Button.Upload" = "رفع";
@@ -222,7 +222,7 @@
 "Modal.UploadFailed.Title" = "فَشِلتْ عملية الرفع";
 "Modal.UploadFailed.Paragraph" = "هل ترغب في إعادة المحاولة أو الإلغاء؟";
 "Modal.Error.LogNotFound" = "ملف السجلّ غير موجود";
-"Modal.Error.NoValidUrls" = "No valid URLs found";
+"Modal.Error.NoValidUrls" = "لم يتم العثور على روابط صحيحة";
 "Modal.Error.JsonEmpty" = "JSON فارغ";
 "Toast.CopiedToClipboard" = "نسخ إلى الحافظة";
 "Toast.WillBeAvailable" = "سوف يكون متوفرا خلال 24سا";
@@ -252,17 +252,6 @@
 "Settings.Notifications.Enabled" = "‮مُفعّل";
 "Settings.Notifications.OnTestCompletion" = "إجراء تنبيه عند إنتهاء الاختبار";
 "Settings.Notifications.OnNews" = "شريط الأخبار";
-"Settings.AutomatedTesting.Label" = "Automated testing";
-"Settings.AutomatedTesting.RunAutomatically" = "Run tests automatically";
-"Settings.AutomatedTesting.Reminder" = "Remind me to run tests";
-"Settings.AutomatedTesting.EnabledTests" = "الاختبارات المفعلّة";
-"Settings.AutomatedTesting.Reminder.Time" = "الوقت";
-"Settings.AutomatedTesting.RunAutomatically.TimesPerDay" = "Test runs per day";
-"Settings.AutomatedTesting.Categories.Label" = "الأقسام";
-"Settings.AutomatedTesting.Categories.Title" = "أقسام المواقع للاختبار";
-"Settings.AutomatedTesting.Categories.Subtitle" = "%@ قسمًا مفعل";
-"Settings.AutomatedTesting.MonthlyMobileAllowance" = "حجم الاستخدام لشبكة الخلوي المسموح به شهريًا";
-"Settings.AutomatedTesting.MonthlyWiFiAllowance" = "حجم الاستخدام لشبكة WiFi المسموح به شهريًا";
 "Settings.Sharing.Label" = "المشاركة";
 "Settings.Sharing.UploadResults" = "نشر النتائج أوتوماتيكيّاً ";
 "Settings.Sharing.UploadResultsManually" = "رفع النتائج يدويّاً ";
@@ -299,10 +288,8 @@
 "Settings.Performance.DashServerAddress" = "خادم DASH";
 "Settings.Performance.DashServerPort" = "منفذ خادم DASH";
 "Settings.SendEmail.Label" = "إرسال إيميل لفريق الدعم ";
-"Settings.SendEmail.Error" = "Please send an email to bugs@openobservatory.org with information on the app and iOS version. Tap \"Copy to clipboard\" below to copy our email address.";
+"Settings.SendEmail.Error" = "من فضلك أرسل ايميل الى bugs@openobservatory.org يحتوى على معلومات عن اصدار البرنامج وإصدار iOS. اضغط على \"نسخ إلى الحافظة\" فى الأسفل لنسخ عنوان البريد الإلكتروني الخاص بنا.";
 "Notification.FinishedRunning" = "انتهى التشغيل";
-"Notification.RunTestReminder" = "Hey, it's time to run OONI Probe!";
-"Notification.RunAutomatically" = "Running OONI Probe tests (automated testing enabled)";
 "OONIBrowser.TryMirror" = "تجربة خادم بديل";
 "OONIBrowser.Loading" = "جاري التحميل...";
 "OONIBrowser.Error" = "حدث خطأ غير متوقع. من فضلك أعد تحميل الصفحة.";
