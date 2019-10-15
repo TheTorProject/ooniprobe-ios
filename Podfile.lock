@@ -32,7 +32,7 @@ DEPENDENCIES:
   - Toast (~> 4.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Crashlytics
     - DateTools
     - DZNEmptyDataSet
@@ -80,4 +80,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5d560142385a1fcc2068157e2265a461f05f2600
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3
